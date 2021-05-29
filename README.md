@@ -12,36 +12,22 @@ The Sbt aims at compiling scala code, so it generates a .jar file in which, once
 
 **Set up for running the program locally:**
 
-![](RackMultipart20210529-4-1l6ytlc_html_eac0e4ac6cc9d245.png)
+![image](https://user-images.githubusercontent.com/44393451/120082086-4c85f280-c0c1-11eb-9b5f-823a3c703aff.png)
+![image](https://user-images.githubusercontent.com/44393451/120082089-4f80e300-c0c1-11eb-8811-4618c0cc2e29.png)
+![image](https://user-images.githubusercontent.com/44393451/120082091-53146a00-c0c1-11eb-88a8-e94cad0e4ff2.png)
+![image](https://user-images.githubusercontent.com/44393451/120082093-5576c400-c0c1-11eb-97cd-17e6ffa66b72.png)
 
-![](RackMultipart20210529-4-1l6ytlc_html_22b0a0b6bfdaf90.png)
+Here are the commands:
 
-![](RackMultipart20210529-4-1l6ytlc_html_fdf75f9f87a0195a.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_5088a585caab9c33.png)
-
-# Spark sbt template
-
-This sbt template enables you to create a new spark project 
-
-## Package
-
-To package your project:
 ```bash
 sbt assembly
 ```
 
-## Deploy 
-
-Copy/Upload the fatjar to the destination
 ```
 TARGET_LOCATION=<location>
 cp target/scala-2.12/spark-sbt-template-assembly-1.0.jar $TARGET_LOCATION
 ```
 
-## Run
-
-To run your project locally:
 ```
 JAR_PATH=$(pwd)/target/scala-2.12/spark-sbt-template-assembly-1.0.jar
 spark-submit --master=local[*] --deploy-mode client --class App $JAR_PATH
@@ -49,82 +35,75 @@ spark-submit --master=local[*] --deploy-mode client --class App $JAR_PATH
 
 **AWS Configuration:**
 
-![](RackMultipart20210529-4-1l6ytlc_html_5af97d0758211834.png)
+![image](https://user-images.githubusercontent.com/44393451/120082148-a8e91200-c0c1-11eb-948b-ddfd13a9ef04.png)
+![image](https://user-images.githubusercontent.com/44393451/120082151-ab4b6c00-c0c1-11eb-988b-de25f8e1ae45.png)
+![image](https://user-images.githubusercontent.com/44393451/120082157-ae465c80-c0c1-11eb-8528-0e0b35326846.png)
+![image](https://user-images.githubusercontent.com/44393451/120082158-af778980-c0c1-11eb-9dd1-5d39368296b9.png)
 
-![](RackMultipart20210529-4-1l6ytlc_html_7cbfd6ee795b502e.png)
+![image](https://user-images.githubusercontent.com/44393451/120082161-b2727a00-c0c1-11eb-9c3e-588787ee5632.png)
 
-![](RackMultipart20210529-4-1l6ytlc_html_e370b2955b95f3c2.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_4730e8e4607560d8.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_c33a3db028bae37e.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_4e004511275f93b4.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_3e20e3d20a5e81fc.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_98964017c747ef8c.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_a98178aead5891a3.png) ![](RackMultipart20210529-4-1l6ytlc_html_a829eb5fd33132ba.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_32514c3e73dea7d8.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_d845f4d26f0ef85f.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_f6629de0827af4ea.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_fd68197ede18ab69.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_3420840946a4cf55.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_d347a09ba0b2a928.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_c3747dc287d8cfa1.png)
+![image](https://user-images.githubusercontent.com/44393451/120082167-c28a5980-c0c1-11eb-9ee5-41426e5b266c.png)
+![image](https://user-images.githubusercontent.com/44393451/120082169-c5854a00-c0c1-11eb-8e5b-62df6b61146c.png)
+![image](https://user-images.githubusercontent.com/44393451/120082171-c7e7a400-c0c1-11eb-9f71-02d3804c1d5e.png)
+![image](https://user-images.githubusercontent.com/44393451/120082175-ca49fe00-c0c1-11eb-88ea-5c7e945524d0.png)
+![image](https://user-images.githubusercontent.com/44393451/120082177-cc13c180-c0c1-11eb-8121-097c0a6f86a9.png)
+![image](https://user-images.githubusercontent.com/44393451/120082181-ce761b80-c0c1-11eb-9664-4d138f0455c4.png)
+![image](https://user-images.githubusercontent.com/44393451/120082183-d03fdf00-c0c1-11eb-9279-6b028b07a05a.png)
+![image](https://user-images.githubusercontent.com/44393451/120082184-d2a23900-c0c1-11eb-89f1-73827e4ef373.png)
+![image](https://user-images.githubusercontent.com/44393451/120082185-d46bfc80-c0c1-11eb-8553-1c8589d70a25.png)
+![image](https://user-images.githubusercontent.com/44393451/120082188-d766ed00-c0c1-11eb-8f5a-a2c117ee30cb.png)
+![image](https://user-images.githubusercontent.com/44393451/120082192-d930b080-c0c1-11eb-8389-3c3ee41b8a2e.png)
+![image](https://user-images.githubusercontent.com/44393451/120082194-db930a80-c0c1-11eb-8d70-257eb4692ef9.png)
 
 Upload the file to S3: dsti-roberto-pipeline
 
-![](RackMultipart20210529-4-1l6ytlc_html_3e8be41667836dbb.png)
+![image](https://user-images.githubusercontent.com/44393451/120082197-e0f05500-c0c1-11eb-8aac-56b8b61edd2a.png)
+
 
 Crawler logs:
 
-![](RackMultipart20210529-4-1l6ytlc_html_43f012eb63e5d0c8.png)
-
-![](RackMultipart20210529-4-1l6ytlc_html_bea8e94fe12609b1.png)
+![image](https://user-images.githubusercontent.com/44393451/120082203-e6e63600-c0c1-11eb-8db0-a221addfa732.png)
+![image](https://user-images.githubusercontent.com/44393451/120082205-e8aff980-c0c1-11eb-8b61-17deb7c1d211.png)
 
 Add the test-csv to the crawler:
 
-![](RackMultipart20210529-4-1l6ytlc_html_c0e4b36a5dcb7783.png)
+![image](https://user-images.githubusercontent.com/44393451/120082207-ee0d4400-c0c1-11eb-99c3-79f10ca082c9.png)
 
 Run crawler:
 
-![](RackMultipart20210529-4-1l6ytlc_html_7737f15294e903d0.png)
+![image](https://user-images.githubusercontent.com/44393451/120082209-f2d1f800-c0c1-11eb-9d49-69805e8ffb33.png)
 
 More tables have been automatically created:
 
-![](RackMultipart20210529-4-1l6ytlc_html_8cca81db77eeb2a0.png)
+![image](https://user-images.githubusercontent.com/44393451/120082216-f9606f80-c0c1-11eb-831d-ea3d1317d4e6.png)
+
 
 Crawler\_test\_txt reads the csv data:
 
-![](RackMultipart20210529-4-1l6ytlc_html_d325919f7803a10c.png)
+![image](https://user-images.githubusercontent.com/44393451/120082225-07ae8b80-c0c2-11eb-9d40-4444a3509e35.png)
+
 
 Now we move to AnalyticsAthena
 
-![](RackMultipart20210529-4-1l6ytlc_html_3aa375213c72213f.png)
+![image](https://user-images.githubusercontent.com/44393451/120082229-0da46c80-c0c2-11eb-8540-638f09f94a1c.png)
+![image](https://user-images.githubusercontent.com/44393451/120082231-109f5d00-c0c2-11eb-8e92-88744925c532.png)
 
-![](RackMultipart20210529-4-1l6ytlc_html_3c8e4e5a5a8e5914.png)
 
 We need to créate a new S3 bucket for receiving the outputs.
 
-![](RackMultipart20210529-4-1l6ytlc_html_2d0e3a6dca51a852.png)
+![image](https://user-images.githubusercontent.com/44393451/120082235-15fca780-c0c2-11eb-978a-5a0950656166.png)
+
 
 We create the folder outputs inside the S3 bucket:
 
-![](RackMultipart20210529-4-1l6ytlc_html_a16e0441b7df840a.png)
+![image](https://user-images.githubusercontent.com/44393451/120082241-1bf28880-c0c2-11eb-88f6-53da5fdc98bd.png)
+
 
 Select this folder inside this S3-output bucket for the Athena queries results:
 
-![](RackMultipart20210529-4-1l6ytlc_html_43fc7301ef868547.png)
+![image](https://user-images.githubusercontent.com/44393451/120082246-23199680-c0c2-11eb-8cca-9e6c267cde5b.png)
+
 
 All the actions of the queries are stored in the S3-output bucket:
 
-![](RackMultipart20210529-4-1l6ytlc_html_e7b08b4a58d6444b.png)
+![image](https://user-images.githubusercontent.com/44393451/120082253-2876e100-c0c2-11eb-8144-65dac5ae039b.png)
